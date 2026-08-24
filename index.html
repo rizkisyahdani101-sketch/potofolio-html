@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal Portofolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Portofolio</h1>
+      <img width="200" height="200" src="my foto.jpeg" alt="foto saya" />
+      <br />
+      <nav label-aria="Main Navigation">
+        <ul>
+          <li><a href="#Tentang Saya">Tentang Saya</a></li>
+          <li><a href="#Pendidikan">Pendidikan</a></li>
+          <li><a href="#Hobi">Hobi</a></li>
+          <li><a href="#Kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Tentang Saya">
+        <h2>Tentang Saya</h2>
+        <p>
+          seorang individu sekaligus mahasiswa yang memiliki minat besar dalam
+          bidang teknologi. saya memiliki pengalaman dalam rendering 3D dan 2D
+          animation, serta memiliki kemampuan dalam pemograman dan pengembangan
+          web ataupun landing page sederhana. saya selalu berusaha untuk terus
+          belajar dan mengambangkan keterampilan saya dalam bidang teknologi.
+          saya memiliki kemampuan untuk menjaga fokus dalam aktivitas yang saya
+          lakukan terutama dalam sesuatu yang saya minati. adaptasi terhadap
+          lingkungan baru dan tantangan baru juga merupakan salah satu kelebihan
+          saya. adaptif terhadap target waktu serta mampu menghasilkan output
+          optimal dalam waktu terbatas. memiliki kemapuan digital research dan
+          information tracking yang kuat. terbiasa melakukan observasi dan
+          analisis terhadap suatu hal untuk memperoleh insight yang relevan dan
+          akurat.
+        </p>
+      </section>
+
+      <hr />
+      <section id="Pendidikan">
+        <h2>Pendidikan</h2>
+        <ul>
+          <li>SD Negeri batang kuis</li>
+          <li>MTS Umar Bin Khattab</li>
+          <li>MAS Madinatussalam</li>
+          <li>Universitas Negeri Medan</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="Hobi">
+        <h2>Hobi</h2>
+        <ol type="1">
+          <li>Membaca novel</li>
+          <li>Rendering 3D and 2D Animation</li>
+          <li>Menggambar dan melukis</li>
+          <li>Traveling</li>
+          <li>Bermain game</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="Kontak">
+        <h2>Kontak</h2>
+
+        <table border="1" cellpadding="8">
+          <tr>
+            <th scope="row">Email</th>
+            <td>
+              <a href="rizkisyahdani101@gmail.com"
+                >rizkisyahdani101@gmail.com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Telepon</th>
+            <td><a href="tel:+6283896282174">0838-9628-2174</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Alamat</th>
+            <td>Medan, Indonesia</td>
+          </tr>
+        </table>
+
+        <h3>Kirim Pesan</h3>
+        <form action="#" method="post" novalidate>
+          <p>
+            <label for="nama"
+              >Nama Lengkap <span aria-hidden="true">*</span></label
+            ><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required
+              minlength="3"
+              aria-required="true"
+              placeholder="Masukkan nama"
+            />
+          </p>
+
+          <p>
+            <label for="email"
+              >Alamat Email <span aria-hidden="true">*</span></label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              placeholder="nama@email.com"
+              aria-describedby="email-hint"
+            />
+            <br />
+          </p>
+
+          <p>
+            <label for="telepon">Nomor Telepon</label><br />
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              pattern="[0-9]{10,13}"
+              aria-describedby="telepon-hint"
+              placeholder="08xxxxxxxxxx"
+            />
+            <br />
+          </p>
+
+          <p>
+            <label for="pesan">Pesan <span aria-hidden="true">*</span></label
+            ><br />
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              cols="40"
+              required
+              aria-required="true"
+              minlength="10"
+              placeholder="Tulis pesan Anda di sini..."
+            ></textarea>
+          </p>
+
+          <p>
+            <button type="submit" aria-label="Kirim formulir kontak">
+              Kirim Pesan
+            </button>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
